@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="add main class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graphe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sommet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.txt" afterDir="false" />
+    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670949193795</updated>
       <workItem from="1670949195536" duration="1809000" />
-      <workItem from="1670952688362" duration="11971000" />
+      <workItem from="1670952688362" duration="13250000" />
     </task>
     <task id="LOCAL-00001" summary="add main class">
       <created>1670949403846</created>
@@ -86,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670949403846</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments">
+      <created>1670968686728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670968686728</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add main class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add main class" />
+    <MESSAGE value="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments" />
   </component>
 </project>

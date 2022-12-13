@@ -50,25 +50,27 @@ public class Main {
             reader.close();
         }
 
-        //Initialisation du numéro du sommet de départ selon l'argument de la ligne de commande
-        try{
-            numeroSommetDepart = Integer.parseInt(args[1]);
-        } catch (ArrayIndexOutOfBoundsException e){
-            //Si l'argument n'existe pas, on demande à l'utilisateur tant qu'il ne donne pas un nombre supérieur à 0
-            System.out.println("Entrez le numéro du sommet de départ: ");
-            numeroSommetDepart = Integer.parseInt(entree.readLine());
-            while (numeroSommetDepart <= 0){
-                System.out.println("Le numéro du sommet de départ doit être positif !\nEntrez le numéro du sommet de départ: ");
-                numeroSommetDepart = Integer.parseInt(entree.readLine());
-            }
-        }
-
         int ordreGraphe = Integer.parseInt(data[0]);
         if(ordreGraphe <= 0){
             System.out.println("L'ordre du graphe doit être positif !");
             System.exit(1);
         }
         Sommet[] sommetsGraphe = new Sommet[ordreGraphe];
+
+        //Initialisation du numéro du sommet de départ selon l'argument de la ligne de commande
+        try{
+            numeroSommetDepart = Integer.parseInt(args[1]);
+        } catch (ArrayIndexOutOfBoundsException e){
+            //Si l'argument n'existe pas, on demande à l'utilisateur
+            System.out.println("Entrez le numéro du sommet de départ: ");
+            numeroSommetDepart = Integer.parseInt(entree.readLine());
+        }
+
+        // On redemande le numéro de départ tant que l'utilisateur ne donne pas un nombre supérieur à 0 et inférieur à l'ordre du graphe
+        while (numeroSommetDepart <= 0 || numeroSommetDepart > ordreGraphe){
+            System.out.println("Le numéro du sommet de départ doit être positif sans dépasser l'ordre du graphe !\nEntrez le numéro du sommet de départ: ");
+            numeroSommetDepart = Integer.parseInt(entree.readLine());
+        }
         int compteurSommets = 0;
 
         for(int i = 1; i < data.length; ++i){
@@ -85,10 +87,14 @@ public class Main {
             //On déclare un compteur de sommet adjacents pour les tableaux insérer dans les tableaux ci-dessus
             int cpt = 0;
 
-            //Si on lit "0", alors la liste des sommets adjacents est terminée
+            //Si on lit 0, alors la liste des sommets adjacents est terminée
             while(Integer.parseInt(data[i]) != 0){
                 voisins[cpt] = Integer.parseInt(data[i]); i++; //La première valeur est le numéro du sommet
                 arcs[cpt] = Integer.parseInt(data[i]); i++; //La seconde est le coût de l'arc
+                if(arcs[cpt] < 0){
+                    System.out.println("L'un des coûts d'arc du graphe est négatif ! Arrêt du programme, vérifiez la description du graphe avant de relancer !");
+                    System.exit(1);
+                }
                 cpt++;
             }
 
@@ -101,7 +107,8 @@ public class Main {
 
         //Construction d'un graphe avec la liste de sommets créée
         Graphe graphe = new Graphe(ordreGraphe, sommetsGraphe);
-        graphe.dijkstra(numeroSommetDepart, fichierSortie);
 
+        //Application de l'agorithme de Dijkstra
+        graphe.dijkstra(numeroSommetDepart, fichierSortie);
     }
 }
