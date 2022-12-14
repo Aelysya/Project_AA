@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Graphe {
 
     private final int ORDRE;
@@ -8,7 +12,7 @@ public class Graphe {
         this.SOMMETS = sommets;
     }
 
-    public void dijkstra(int numeroSommetDepart, String fichierSortie){
+    public void dijkstra(int numeroSommetDepart, String fichierSortie) throws IOException {
         int[] distances = new int[ORDRE];
         boolean[] sommetsVisites = new boolean[ORDRE];
 
@@ -50,12 +54,21 @@ public class Graphe {
             }
         }
 
+        String affichageFinal = "Résultats de l'algorithme de Dijkstra depuis le sommet " + numeroSommetDepart + ": \n";
+        for(int l = 0; l < ORDRE; ++l){
+            affichageFinal += "-> " + (l+1) + ": " + (distances[l] == Integer.MAX_VALUE || distances[l] == Integer.MIN_VALUE ? "infini" : distances[l]) + "\n";
+        }
+
         //Affichage des plus courts chemins
         if(fichierSortie == null){
-            System.out.println("Résultats de l'algorithme de Dijkstra depuis le sommet " + numeroSommetDepart + ": ");
-            for(int l = 0; l < ORDRE; ++l){
-                System.out.println("-> " + (l+1) + ": " + (distances[l] == Integer.MAX_VALUE || distances[l] == Integer.MIN_VALUE ? "infini" : distances[l]));
-            }
+            System.out.println(affichageFinal);
+        } else {
+            File file = new File(fichierSortie);
+            file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            writer.append(affichageFinal);
+            writer.flush();
+            writer.close();
         }
     }
 }

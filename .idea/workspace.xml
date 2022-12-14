@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit">
+    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Dijkstra fonctionnel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Graphe.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Sommet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test.txt" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,7 +59,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Projet_AA" />
-      <option name="PROGRAM_PARAMETERS" value="test.txt" />
+      <option name="PROGRAM_PARAMETERS" value="test.txt 1 out.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,6 +82,7 @@
       <workItem from="1670952688362" duration="19823000" />
       <workItem from="1670979561743" duration="656000" />
       <workItem from="1671024230176" duration="6742000" />
+      <workItem from="1671031515889" duration="1757000" />
     </task>
     <task id="LOCAL-00001" summary="add main class">
       <created>1670949403846</created>
@@ -106,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670979590517</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Dijkstra fonctionnel">
+      <created>1671031647986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671031647986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +141,7 @@
     <MESSAGE value="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments" />
     <MESSAGE value="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc" />
     <MESSAGE value="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit" />
+    <MESSAGE value="Dijkstra fonctionnel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra fonctionnel" />
   </component>
 </project>
