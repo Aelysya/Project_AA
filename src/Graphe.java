@@ -24,7 +24,7 @@ public class Graphe {
             sommetsVisites[i] = false;
         }
 
-        //La distance de la source à elle-même est mise à 0
+        //La distance de la source à elle-même est mise à 0 et son prédecesseur est mis à "_"
         distances[numeroSommetDepart-1] = 0;
         predecesseurs[numeroSommetDepart-1] = "_";
 
@@ -50,8 +50,13 @@ public class Graphe {
 
             //Mise à jour des distance minimales
             for(int k = 0; k < s.getVOISINS().length; ++k){
+                //Si le sommet n'a pas été visité et que la distance trouvée à plus petit que celle connue, mise à jour de la distance
                 if(!sommetsVisites[s.getVOISINS()[k] - 1] && distances[s.getVOISINS()[k] - 1] > distances[numeroVoisinPlusProche] + s.getARCS()[k]){
                     distances[s.getVOISINS()[k] - 1] = distances[numeroVoisinPlusProche] + s.getARCS()[k];
+                    //Mise à jour des prédecesseurs
+                    if(distances[s.getVOISINS()[k] - 1] != Integer.MIN_VALUE){
+                        predecesseurs[s.getVOISINS()[k] - 1] = Integer.toString(s.getNUMERO());
+                    }
                 }
             }
         }

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Ajout de l'affichage de sortie possible dans un fichier externe">
-      <change afterPath="$PROJECT_DIR$/src/out.txt" afterDir="false" />
+    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Ajout d'un début de code pour l'affichage des prédecesseurs, ça marche pas encore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphe.java" afterDir="false" />
     </list>
@@ -63,7 +62,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Projet_AA" />
-      <option name="PROGRAM_PARAMETERS" value="test.txt 2 out.txt" />
+      <option name="PROGRAM_PARAMETERS" value="test.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,7 +85,7 @@
       <workItem from="1670952688362" duration="19823000" />
       <workItem from="1670979561743" duration="656000" />
       <workItem from="1671024230176" duration="6742000" />
-      <workItem from="1671031515889" duration="3540000" />
+      <workItem from="1671031515889" duration="4585000" />
     </task>
     <task id="LOCAL-00001" summary="add main class">
       <created>1670949403846</created>
@@ -130,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671034043513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout d'un début de code pour l'affichage des prédecesseurs, ça marche pas encore">
+      <created>1671035776250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671035776250</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +161,7 @@
     <MESSAGE value="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit" />
     <MESSAGE value="Dijkstra fonctionnel" />
     <MESSAGE value="Ajout de l'affichage de sortie possible dans un fichier externe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de l'affichage de sortie possible dans un fichier externe" />
+    <MESSAGE value="Ajout d'un début de code pour l'affichage des prédecesseurs, ça marche pas encore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un début de code pour l'affichage des prédecesseurs, ça marche pas encore" />
   </component>
 </project>
