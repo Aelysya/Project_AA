@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments">
+    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670949193795</updated>
       <workItem from="1670949195536" duration="1809000" />
-      <workItem from="1670952688362" duration="13250000" />
+      <workItem from="1670952688362" duration="19823000" />
     </task>
     <task id="LOCAL-00001" summary="add main class">
       <created>1670949403846</created>
@@ -90,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670968686728</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc">
+      <created>1670971395874</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670971395874</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add main class" />
     <MESSAGE value="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments" />
+    <MESSAGE value="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc" />
   </component>
 </project>
