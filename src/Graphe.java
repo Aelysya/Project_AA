@@ -15,6 +15,8 @@ public class Graphe {
     public void dijkstra(int numeroSommetDepart, String fichierSortie) throws IOException {
         int[] distances = new int[ORDRE];
         boolean[] sommetsVisites = new boolean[ORDRE];
+        //TODO tableau des prédecesseurs
+        String[] predecesseurs = new String[ORDRE];
 
         //Initialisation des distances à "infini" et des sommets visités à "faux"
         for(int i = 0; i < ORDRE; ++i){
@@ -22,8 +24,9 @@ public class Graphe {
             sommetsVisites[i] = false;
         }
 
-        //La distance de la source à elle-même est mise à 0 et on la marque comme visitée
+        //La distance de la source à elle-même est mise à 0
         distances[numeroSommetDepart-1] = 0;
+        predecesseurs[numeroSommetDepart-1] = "_";
 
         //Déclaration de variables qui serviront à calculer les distances minimales
         int distanceMin;
@@ -31,7 +34,6 @@ public class Graphe {
 
         //Calcul des distances minimales
         for(int i = 0; i < ORDRE - 1; ++i) {
-
             distanceMin = Integer.MAX_VALUE;
             numeroVoisinPlusProche = -1;
 
@@ -54,9 +56,14 @@ public class Graphe {
             }
         }
 
+        //Construction de l'affichage des chemins
         String affichageFinal = "Résultats de l'algorithme de Dijkstra depuis le sommet " + numeroSommetDepart + ": \n";
         for(int l = 0; l < ORDRE; ++l){
-            affichageFinal += "-> " + (l+1) + ": " + (distances[l] == Integer.MAX_VALUE || distances[l] == Integer.MIN_VALUE ? "infini" : distances[l]) + "\n";
+            affichageFinal += (l+1)
+                    + " ("
+                    + (distances[l] == Integer.MAX_VALUE || distances[l] == Integer.MIN_VALUE ? "infini" : distances[l])
+                    + ", "
+                    + predecesseurs[l] + ")\n";
         }
 
         //Affichage des plus courts chemins
