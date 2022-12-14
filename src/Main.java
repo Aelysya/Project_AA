@@ -98,8 +98,18 @@ public class Main {
                 cpt++;
             }
 
+            //On déclare des nouveaux tableaux qui seront de la bonne taille (les précedénts contenaient des 0 lorsqu'il n'y avait pas d'arc vers certains sommets
+            int[] vraisVoisins = new int[cpt];
+            int[] vraisArcs = new int[cpt];
+
+            //On rempli les nouveaux tableaux corrects avec les valeurs trouvées
+            for(int j = 0; j < cpt; ++j){
+                vraisVoisins[j] = voisins[j];
+                vraisArcs[j] = arcs[j];
+            }
+
             //Construction d'un nouveau sommet avec les valeurs trouvées
-            Sommet s = new Sommet(numeroSommet, voisins, arcs);
+            Sommet s = new Sommet(numeroSommet, vraisVoisins, vraisArcs);
             //Insertion du nouveau sommet dans le tableau de sommets
             sommetsGraphe[compteurSommets] = s;
             compteurSommets++;

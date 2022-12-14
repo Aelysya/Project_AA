@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc">
+    <list default="true" id="059f7526-c579-4c60-a511-34f96ea41bed" name="Changes" comment="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last.edited.regexp": "test test\ntest\n\n\n",
-    "last_opened_file_path": "C:/Users/maxim/Desktop/Projets perso/Projet_SnackStock/SnackStockFX",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last.edited.regexp&quot;: &quot;test test\ntest\n\n\n&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maxim/Desktop/Projets perso/Projet_SnackStock/SnackStockFX&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -74,6 +75,8 @@
       <updated>1670949193795</updated>
       <workItem from="1670949195536" duration="1809000" />
       <workItem from="1670952688362" duration="19823000" />
+      <workItem from="1670979561743" duration="656000" />
+      <workItem from="1671024230176" duration="6742000" />
     </task>
     <task id="LOCAL-00001" summary="add main class">
       <created>1670949403846</created>
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670971395874</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit">
+      <created>1670979590517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670979590517</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +127,7 @@
     <MESSAGE value="add main class" />
     <MESSAGE value="Lecture de fichier, création du graphe et des sommets, alternatives selon le nb d'arguments" />
     <MESSAGE value="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de vérifications de valeur sur le sommet de départ et sur les coûts d'arc" />
+    <MESSAGE value="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Début de l'algo de Dijkstra, ça marche pas encore mais le principal du fonctionnement est écrit" />
   </component>
 </project>
